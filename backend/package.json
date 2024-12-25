@@ -4,7 +4,7 @@
   "description": "A websocket server serving as signaling server for Webrtc protocol.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "tsc -b && node dist/index.js"
   },
   "author": "Krishil",
   "license": "ISC",
