@@ -1,0 +1,62 @@
+/* CSS Reset to remove default browser margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General container styling for dark mode */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #121212; /* Dark background */
+  color: #f0f0f0; /* Light text color */
+  padding: 1rem; /* Prevent content from touching the edges */
+}
+
+/* Title styling */
+.home-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Button container styling */
+.home-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center; /* Ensure buttons are centered */
+}
+
+/* Button styling */
+.home-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.home-button.make-call {
+  background-color: #357a38; /* Dark green */
+  color: white;
+}
+
+.home-button.receive-call {
+  background-color: #1769aa; /* Dark blue */
+  color: white;
+}
+
+/* Button hover effects */
+.home-button:hover {
+  transform: scale(1.05);
+}
+
+.home-button:active {
+  transform: scale(0.95);
+}
